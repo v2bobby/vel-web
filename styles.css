@@ -1,0 +1,113 @@
+/* Veritas Layer - Premium Landing Page Styles */
+/* Clean, futuristic, dark theme - fully responsive */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+
+:root {
+    --accent: #00D4FF;
+}
+
+body {
+    font-family: 'Inter', system_ui, sans-serif;
+}
+
+.font-display {
+    font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.hero-bg {
+    background: 
+        radial-gradient(circle at 30% 20%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(167, 139, 250, 0.06) 0%, transparent 60%),
+        #05050A;
+}
+
+.section-header {
+    font-size: 2.75rem;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+@media (max-width: 768px) {
+    .section-header {
+        font-size: 2.1rem;
+    }
+}
+
+.glass {
+    background: rgba(15, 15, 26, 0.75);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.premium-card {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+               box-shadow 0.2s cubic-bezier(0.4, 0.0, 0.2, 1),
+               border-color 0.2s ease;
+}
+
+.premium-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    border-color: rgba(0, 212, 255, 0.2);
+}
+
+.tech-pill {
+    background: rgba(0, 212, 255, 0.08);
+    color: #00D4FF;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.btn-primary {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px -3px rgb(0 212 255 / 0.3), 
+               0 4px 6px -4px rgb(0 212 255 / 0.3);
+}
+
+.btn-secondary {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.3);
+}
+
+.roadmap-step {
+    position: relative;
+}
+
+.roadmap-step:not(:last-child):after {
+    content: '';
+    position: absolute;
+    left: 23px;
+    top: 52px;
+    bottom: -20px;
+    width: 2px;
+    background: linear-gradient(to bottom, #00D4FF, transparent);
+}
+
+.metric {
+    font-size: 2.25rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+    .section-header {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+    
+    .premium-card {
+        padding: 1.75rem;
+    }
+}
