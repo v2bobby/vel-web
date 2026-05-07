@@ -1,0 +1,10 @@
+# Vercel ignore file for Veritas Layer landing page
+
+.DS_Store
+.git
+.gitignore
+.vercel
+node_modules
+*.log
+*.md
+!README.md
